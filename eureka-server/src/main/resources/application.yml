@@ -1,0 +1,9 @@
+eureka:
+  server:
+    use-read-only-response-cache: false #关闭只读response-cache
+    response-cache-auto-expiration-in-seconds: 10 #设置readWriteCacheMap的expiration参数,指定写入多次时间后过期.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
